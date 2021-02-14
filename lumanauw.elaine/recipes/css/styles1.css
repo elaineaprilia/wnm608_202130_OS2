@@ -1,0 +1,42 @@
+html, body{
+	max-width: 100%;
+	height: 100%;
+	margin: auto 0;
+	margin-bottom: 5%;
+}
+
+
+@font-face{
+	font-family: 'metropolis-medium';
+	src: url('../font/metropolis-medium.otf');
+}
+  
+@font-face{
+	font-family: 'metropolis-light';
+	src: url('../font/metropolis-light.otf');
+}
+
+header{
+	background-color: #dedede;
+	padding-top: 9px;
+	text-align: center;
+	height: 70px;
+}
+
+body{
+	background-color: #FFFFFF;
+}
+
+h3{
+	font-family: 'metropolis-medium';
+	font-size: 24px;
+	letter-spacing: .1em;
+}
+
+
+p{
+	font-family: 'metropolis-light';
+	font-size: 17px;
+	line-height: 2em;
+	text-align: justify;
+}
