@@ -3,8 +3,29 @@ html, body{
 	height: 100%;
 	margin: auto 0;
 	margin-bottom: 5%;
+	padding: 40px;
 }
 
+.row{
+	display: flex;
+}
+
+.column{
+	flex: 50%;
+}
+
+
+img{
+	padding: 50px;
+}
+
+.coffee{
+	transform: rotate(-4deg);
+}
+
+.indomie{
+	transform: rotate(3deg);
+}
 
 @font-face{
 	font-family: 'metropolis-medium';
@@ -17,26 +38,30 @@ html, body{
 }
 
 header{
-	background-color: #dedede;
+	background-color: white;
 	padding-top: 9px;
-	text-align: center;
+	text-align: left;
 	height: 70px;
 }
 
 body{
-	background-color: #FFFFFF;
+	background-color: white;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
 }
 
 h3{
+	color: #d3d3d3;
 	font-family: 'metropolis-medium';
 	font-size: 24px;
 	letter-spacing: .1em;
 }
 
 
-p{
+ol{
 	font-family: 'metropolis-light';
-	font-size: 17px;
-	line-height: 2em;
+	font-size: 19px;
+	line-height: 1.3em;
 	text-align: justify;
 }
