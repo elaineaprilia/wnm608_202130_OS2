@@ -1,0 +1,33 @@
+:root {
+
+   --color-darkbeige:#b2906e;
+   --color-darkgrey:#7d7d7d;
+   --color-neutral-medium:#94888e;
+   --color-neutral-dark:#4a3f43;
+   --color-lightbeige:#fff7e9;
+}
+
+
+body {
+   background-color:#fff7e9;
+}
+
+h3,
+p,
+li{
+	color:var(--color-darkgrey);
+	letter-spacing: .012em;
+}
+
+h1{
+	color:var(--color-lightbeige);
+}
+
+
+.image-gallery-3{
+/*	align-items: left;*/
+	width: 300px;
+	height: 300px;
+/*	margin: 20px;*/
+/*	padding-top: 40px;*/
+}
