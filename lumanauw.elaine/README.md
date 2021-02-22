@@ -7,7 +7,7 @@ http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/
 ### recipe link
 http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/index.html
 
-### other link
+### other link(s)
 http://mytinydesigns.com
 
 :-)
