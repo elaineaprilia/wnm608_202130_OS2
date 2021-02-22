@@ -1,13 +1,13 @@
 # elaine lumanauw
 ---
 
-### week 2 storefront
+### week 2 storefront link
 http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/
 
 ### recipe link
 http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/index.html
 
-### links
+### other link
 http://mytinydesigns.com
 
 :-)
