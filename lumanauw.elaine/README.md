@@ -1,12 +1,19 @@
 # elaine lumanauw
 ---
 
-## links
+### week 2 storefront
+http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/
 
-- http://mytinydesigns.com
-- http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/index.html
+### recipe link
+http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/index.html
+
+### links
+http://mytinydesigns.com
 
 :-)
 
-> test
-[title](https://mytinydesigns.com/)
+---
+### Git commands
+- git add .
+- git commit -m"[message]"
+- git push origin main
