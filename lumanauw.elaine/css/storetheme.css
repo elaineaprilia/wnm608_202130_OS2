@@ -1,4 +1,4 @@
-:root {
+/*:root {
 
    --color-deepgrey:#231f20;
    --color-maroon:#602534;
@@ -10,7 +10,7 @@
    --color-white:#fff;1;
    --color-black:#11
 }
-
+*/
 
 body {
    background-color:var(--color-lightgrey);
