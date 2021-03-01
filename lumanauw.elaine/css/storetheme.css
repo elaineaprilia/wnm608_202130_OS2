@@ -1,28 +1,26 @@
 :root {
 
-   --color-darkbeige:#b2906e;
-   --color-darkgrey:#7d7d7d;
-   --color-neutral-medium:#94888e;
-   --color-neutral-dark:#4a3f43;
-   --color-lightbeige:#fff7e9;
+   --color-deepgrey:#231f20;
+   --color-maroon:#602534;
+   --color-lightbeige:#ccbeb5;
+   --color-pastelpink:#d4a9a5;
+   --color-lightgrey:#e5e3e1;
+   --color-bluegrey:#9ba4a3;
+
+   --color-white:#fff;1;
+   --color-black:#11
 }
 
 
 body {
-   background-color:#fff7e9;
+   background-color:var(--color-lightgrey);
 }
 
 h3,
-p,
-li{
-	color:var(--color-darkgrey);
+p{
+	color:var(--color-deepgrey);
 	letter-spacing: .012em;
 }
-
-h1{
-	color:var(--color-lightbeige);
-}
-
 
 .image-gallery-3{
 /*	align-items: left;*/
@@ -30,4 +28,38 @@ h1{
 	height: 300px;
 /*	margin: 20px;*/
 /*	padding-top: 40px;*/
+}
+
+
+/*HOMEPAGE BANNER*/
+
+.hp-banner-all{
+   text-align:center;
+   margin-top:50px;
+   margin-bottom:20px;
+}
+
+.hp-subheading{
+   letter-spacing:.15em;
+   margin-bottom:8px;
+}
+
+.hp-title{
+   letter-spacing:.2em;
+   position: relative;
+}
+
+
+.hp-cta{
+   text-decoration:underline;
+}
+
+.hp-imageplacement{
+   padding: 20px;
+   margin-left: 30px;
+}
+
+.hp-bg-text-format{
+   padding-right:10em;
+   color:var(-color--white);
 }
