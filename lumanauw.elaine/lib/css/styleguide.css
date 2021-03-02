@@ -6,56 +6,68 @@
 }
 
 :root {
-   --color-darkbeige:#b2906e;
-   --color-lightbeige:#fff7e9;
-   --color-darkgrey:#7d7d7d;
+   --color-maroon:#602534;
+   --color-lightbeige:#ccbeb5;
+   --color-pastelpink:#d4a9a5;
+   --color-lightgrey:#e5e3e1;
+   --color-bluegrey:#9ba4a3;
+   --color-deepgrey:#231f20;
 
    --color-white:#fff;
    --color-black:#111;
 
-
    --header-height:3rem;
-
 
    --font-sans: Helvetica, Arial, sans-serif;
    --font-serif: Cambria, Georgia, "Times New Roman", serif;
+
+   $desktop:1200px; /*xl*/
+   $laptop:1024px; /*lg*/
+   $tablet:768px; /*md*/
+   $phone:480px; /*s*/
+
 }
+
 
 body {
    margin:0;
    font-size:100%;
-   font-family:var(--font-sans);
+   font-family:var(--font-sans-serif);
 }
 
-h1,
-h4,
-h5,
-h6 {
-   font-family:var(--font-sans);
+h1{
+   font-size:40px;
+   color:var(--color-deepgrey);
+
+@media screen and (max-width:800px) {
+   font-size:10px;
+}
 }
 
 h2{
-   font-size: 20px;
-   color:var(--color-darkbeige);
-   letter-spacing: .1em;
-}
-
-h3,
-p{
-   color:var(--color-darkgrey);
-}
-
-a {
-   color:inherit;
-   text-decoration:none;
-}
-a:hover {
-   text-decoration:underline;
+   font-size:30px;
+   color:var(--color-bluegrey);
+   letter-spacing:.1em;
 }
 
 h4{
    color:var(--color-white);
    letter-spacing: .1em;
+}
+
+h5,
+h6,
+h3,
+p{
+   color:var(--color-darkgrey);
+}
+
+a{
+   color:inherit;
+   text-decoration:none;
+}
+a:hover {
+   text-decoration:underline;
 }
 
 
@@ -64,6 +76,10 @@ h4{
    max-width:1000px;
    margin-left:auto;
    margin-right:auto;
+   padding-left:25px;
+   padding-right:25px;
+   padding-top:80px;
+   padding-bottom:80px;
 }
 
 
@@ -77,21 +93,46 @@ h4{
 
 .flex-stretch { flex: 1 1 auto; }
 .flex-none { flex: none; }
+.flex-wrap { flex: wrap; }
 
 .flex-align-center { align-items:center; }
+
+.flex-column { flex-flow:column; }
+.flex-row {flex-direction:row; }
+
+.space-evenly { justify-content:space-evenly; }
+.flex-end { justify-content:flex-end; }
 .flex-justify-center { justify-content:center; }
 
 
 
 
-
 /* COMPONENT CLASSES */
+/* NAVBAR */
 
 .navbar {
-   background-color:var(--color-lightbeige);
-   color:var(--color-black);
+   -webkit-transition: padding .2s ease-in;
+   position:fixed;
+   top:2em;
+   padding-left:10em;
+   padding-right:10em;
+   width:100%;
+   color:var(--color-white);
    line-height:var(--header-height);
-   padding-top:10px;
+   z-index: 999;
+}
+
+.navbar-logo{
+   margin-top:40px;
+   position:absolute;
+   left:50%;
+   transform:translate(-50%,-50%);
+}
+
+.mtd-logo{
+   width: 100px;
+   max-width:100%;
+   height:auto;
 }
 
 .nav ul,
@@ -101,9 +142,14 @@ h4{
    padding-left:0;
 }
 
+
+.navbar li{
+      color:var(--color-white);
+}
+
 .navbar a {
    display:block;
-   padding:0 0.5em;
+   padding:0 1em;
 }
 
 
@@ -118,24 +164,29 @@ h4{
    background-size:cover;
    background-position:center;
    background-attachment:fixed;
+   background-repeat:no-repeat;
 
+   height:70vh;
+   max-height:500px;
+}
+
+.view-window-nonfixed {
+   position:relative;
+   overflow:hidden;
+
+   background-size:cover;
+   background-position:center;
+
+   max-height:400px;
    height:70vh;
 }
 
-.gallery-all-wrap{
-   width: 1000px;
-   text-align: center;
-   margin: 0 auto;
-}
 
 
-
-
-
-/* CARD */
+/* CARD
 
 .card {
-/*   background-color:var(--color-white);*/
+background-color:var(--color-white);
    padding:2em;
 
    margin-bottom:1.1em;
@@ -163,7 +214,19 @@ h4{
    .card.flat {
       padding:0;
    }
+*/
 
+.image-window{
+   background-size:cover;
+   background-position:center;
+   overflow:hidden;
+
+   padding:20px;
+   width:400px;
+   height:300px;
+
+   border-radius:8px;
+}
 
 
 .gallery {
@@ -181,17 +244,22 @@ h4{
 
 .button-all-wrap{
    width: 180px;
-   text-align: center;
+   text-align:center;
    margin: 0 auto;
 }
 
 .button {
-   position: relative;
-   display: block;
-   background: var(--color-darkbeige);
-   border-radius: 9px;
-   color: var(--color-white);
-   padding:.01em;
+   border-radius:40px;
+   height:48px;
+
+   letter-spacing:.15em;
+   text-transform:uppercase;
+
+   position:relative;
+   display:block;
+   background-color:var(--color-maroon);
+   color:var(--color-white);
+   padding:1em;
 
    margin-bottom:.1em;
    margin-top:.1em;
@@ -199,8 +267,10 @@ h4{
    position:relative;
    overflow:hidden;
 
-   border-radius:0.3em;
-   box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+   justify-content:center;
+   align-items:center;
+
+/*   box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);*/
 
 }
 
@@ -212,7 +282,29 @@ h4{
    opacity: 40%;
    color:var(--color-black);
    line-height:var(--header-height);
-   padding-top:10px;
-   margin-left: 30px;
+   margin-top:80px;
+   height:80px;
 
 }
+
+.column{
+   width:100%;
+   margin-left:15px;
+   margin-right:15px;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width:992px); {
+   .column { width:50%; }
+}
+
+@media (max-width:380px);{
+   .column { width:100%; }
+}
+
+
+
+
+
+

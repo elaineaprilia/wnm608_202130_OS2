@@ -1,14 +1,7 @@
-$desktop:1200px; /*xl*/
-$laptop:1024px; /*lg*/
-$tablet:768px; /*md*/
-$phone:480px; /*s*/
-
-
-
 .grid{
 	display:grid;
 	grid-template-columns: repeat(12,1fr);
-	grid-gap:10px 1em;
+	grid-gap:10px 2em;
 	height:300px;
 }
 
@@ -17,7 +10,7 @@ $phone:480px; /*s*/
 	background-color:#444;
 	color:#fff;
 	border-radius:5px;
-	padding:1em;
+/*	padding:1em;*/
 /*	overflow:hidden;*/
 	height:300px;
 }
