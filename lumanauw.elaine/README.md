@@ -1,4 +1,4 @@
-# elaine lumanauw👩‍💻
+# elaine lumanauw👩‍💻☕
 ---
 
 ## storefront project
@@ -6,6 +6,12 @@
 
 ### ✨styleguide
 - http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/styleguide
+
+### ✨storefront CSS
+- http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/lib/css/styleguide.css
+- http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/lib/css/gridsystem.css
+- http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/css/storetheme.css
+- 
 
 ### ✨other links
 http://mytinydesigns.com
