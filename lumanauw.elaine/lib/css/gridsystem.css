@@ -2,7 +2,13 @@
 	display:grid;
 	grid-template-columns: repeat(12,1fr);
 	grid-gap:10px 2em;
-	height:300px;
+	height:100%;
+}
+
+.well {
+   background-color:var(--color-maroon);
+   padding:0.5em;
+   border-radius:0.2em;
 }
 
 .box{

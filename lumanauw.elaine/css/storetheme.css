@@ -16,11 +16,6 @@ body {
    background-color:var(--color-lightgrey);
 }
 
-h3,
-p{
-	color:var(--color-deepgrey);
-	letter-spacing: .012em;
-}
 
 .image-gallery-3{
 /*	align-items: left;*/

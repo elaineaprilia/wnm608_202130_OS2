@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>STYLEGUIDE</title>
+
+   <base href="/aau/wnm608/lumanauw.elaine/">
+
+   <link rel="stylesheet" href="lib/css/styleguide.css">
+   <link rel="stylesheet" href="lib/css/gridsystem.css">
+   <link rel="stylesheet" href="css/storetheme.css">
+   <link rel="stylesheet" href="css/styleguidesettings">
+
+<!-- import fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+
+<body style="padding-bottom:300px">
+<!-- 	<div class="container">
+		<h1>styleguide for <a href="http://mytinydesigns.com/aau/wnm608/lumanauw.elaine">elaine's storefront</a></h1>
+	</div>
+ -->
+	<style>
+  .sidenav{
+/*  	height: 100%;*/
+  	width:260px;
+  	height:80%;
+  	position:fixed;
+  	top:20px;
+  	left:20px;
+  	border-radius:10px;
+  	background-color:var(--color-lightbeige);
+  	overflow-x: hidden;
+  	padding:30px;
+  	}
+
+  .main{
+  margin-left:260px;
+  font-size:28px;
+  padding-left:40px;
+  max-width:100%;
+  margin-top:1em;
+  padding-bottom:.5em;
+  position:static;
+}
+
+  .headernav{
+  background-color:var(--color-lightbeige);
+  padding:10px;
+  border-radius:6px;
+  font-size:17px;
+}
+
+  .grid{
+	display:grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-gap:2px .5em;
+}
+
+  .palette{
+  	border:.5px solid black;
+  	border-radius:10px;
+  	height: 20px;
+    width: 20px;
+}
+	}
+
+	</style>
+
+	<div class="sidenav display-flex flex-column flex-align flex-gap">
+		<a href="styleguide/#typography">typography</a></li>
+		<a href="styleguide/#color">color</a></li>
+		<a href="styleguide/#grid">grid</a></li>
+		<a href="styleguide/#buttons">buttons</a></li>
+		<a href="styleguide/#images">images</a></li>
+	</div>
+
+	<div class="main">
+	  <a href="index.html"><h3>Click to view website</h3></a>
+	</div>
+
+	<div class="main">
+
+	  <h3 class="headernav" id="typography">typography</h3>
+	  	<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;h1&gt;&lt;h1&gt;</code>  <h1>Heading 1</h1></div>
+	  	<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;h2&gt;&lt;h2&gt;</code>  <h2>Heading 2</h2></div>
+	  	<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;h3&gt;&lt;h3&gt;</code>  <h3>Heading 3</h3></div>
+	  	<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;p&gt;&lt;p&gt;</code>  <p>Paragraph</p></div>
+	</div>
+
+	<div class="main">
+	  
+	  <h3 class="headernav" id="color">color</h3>
+	  	
+	  	<div class="grid">
+
+	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+	  			<div class="display-flex flex-column flex-gap">
+	  				<h3>background</h3>
+	  				<div class="display-flex flex-row flex-gap flex-align-center">
+	  					<div class="palette" style="background-color:var(--color-lightgrey)"></div>
+	  					<p>light-grey #e5e3e1</p></div>
+	  			</div>
+	  		</div>
+
+
+	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+	  			<div class="display-flex flex-column flex-gap">
+	  				<h3>font colors</h3>
+	  				<div class="display-flex flex-row flex-gap flex-align-center">
+	  					<div class="palette" style="background-color:var(--color-darkgrey)"></div>
+	  					<p>dark-grey #231f20</p></div>
+	  				<div class="display-flex flex-row flex-gap flex-align-center">
+	  					<div class="palette" style="background-color:var(--color-white)"></div>
+	  					<p>white #fff</p></div>
+	  			</div>
+	  		</div>
+
+
+	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+	  			<div class="display-flex flex-column flex-gap">
+	  				<h3>primary accent</h3>
+	  				<div class="display-flex flex-row flex-gap flex-align-center">
+	  					<div class="palette" style="background-color:var(--color-maroon)"></div>
+	  					<p>maroon #603534</p>
+	  				</div>
+	  			</div>
+	  		</div>
+
+
+	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+	  			<div class="display-flex flex-column flex-gap">
+	  				<h3>secondary accent</h3>
+	  				<div class="display-flex flex-row flex-gap flex-align-center">
+	  					<div class="palette" style="background-color:var(--color-lightbeige)"></div>
+	  					<p>light-beige #ccbeb5</p></div>
+	  			</div>
+	  		</div>
+
+		</div>
+	</div>
+
+	<div class="main">
+
+		<h3 class="headernav" id="grid">grid</h3>
+		
+		<p>Single column, non responsive</p>
+	  	<div class="grid">
+	  		<div class="col-xs-12">
+	  			<p class="well" style="color:var(--color-white)">Column 12</p>
+	  		</div>
+	  	</div>
+
+	  	<p>2 column, responsive</p>
+	  	<div class="grid">
+	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 12 / Col md 6 / Col lg 6</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 12 / Col md 6 / Col lg 6</p>
+	  		</div>
+	  	</div>
+
+	    <p>3 column, responsive</p>
+	  	<div class="grid">
+	  		<div class="col-xs-12 col-md-4">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col md 4</p>
+	  		</div>
+	  		<div class="col-xs-12 col-md-4">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col md 4</p>
+	  		</div>
+	  		<div class="col-xs-12 col-md-4">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col md 4</p>
+	  		</div>
+	  	</div>
+
+	    <p>4 column, responsive</p>
+	  	<div class="grid">
+	  		<div class="col-xs-12 col-sm-6 col-md-3">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 3</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-6 col-md-3">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 3</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-6 col-md-3">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 3</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-6 col-md-3">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 3</p>
+	  		</div>
+	  	</div>
+
+	  	<p>6 + (2+2+2) column, responsive</p>
+	  	<div class="grid">
+	  		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 6 / Col lg 6</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 2 / Col lg 2</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 2 / Col lg 2</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 6 / Col md 2 / Col lg 2</p>
+	  		</div>
+	  	</div>
+
+	  	<p>5 + 7 column, responsive</p>
+	  	<div class="grid">
+	  		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 12 / Col md 5 / Col lg 5</p>
+	  		</div>
+	  		<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+	  			<p class="well" style="color:var(--color-white)">Col xs 12 / Col sm 12 / Col md 7 / Col lg 7</p>
+	  		</div>
+	  	</div>
+	 </div>
+
+	<div class="main">
+	
+	<h3 class="headernav" id="buttons">buttons</h3>
+		
+		<div class="grid grid-gap">
+			<div class="col-xs-12 col-md-12 col-lg-4">
+	  			<p class="button" style="color:var(--color-white)">button</p>
+	  		</div>
+	  		<div class="col-xs-12 col-md-12 col-lg-4">
+	  			<p class="button2" style="color:var(--color-maroon);">button2</p>
+	  		</div>
+	  		<div class="col-xs-12 col-md-12 col-lg-4">
+	  			<p class="button3">button3</p>
+	  		</div>
+		</div>
+	</div>
+
+	<div class="main">
+
+	<h3 class="headernav" id="images">images</h3>
+		<div class="display-flex">
+			<div class="flex-none">
+				<div class="display-flex flex-gap">
+					<p><a href>aofnoe</a></p>
+					<p><a href>sofnie</a></p>
+				</div>
+			</div>
+	
+	</div>
+
+
+
+
+
+
+</div>
+
+
+
+

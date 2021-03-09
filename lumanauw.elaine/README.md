@@ -13,7 +13,8 @@ http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/
 - http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/css/storetheme.css
 
 ### ✨other links
-http://mytinydesigns.com
+home: http://mytinydesigns.com
+recipe: http://mytinydesigns.com/aau/wnm608/lumanauw.elaine/recipes
 
 
 ---
