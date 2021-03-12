@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
    <meta charset="UTF-8">
    <title>STYLEGUIDE</title>
 
@@ -28,8 +29,8 @@
 	<style>
   .sidenav{
 /*  	height: 100%;*/
-  	width:260px;
-  	height:80%;
+  	width:auto;
+/*  	height:100%;*/
   	position:fixed;
   	top:20px;
   	left:20px;
@@ -40,16 +41,19 @@
   	}
 
   .main{
-  margin-left:260px;
+/*  position:static;*/
+  margin-left:6em;
   font-size:28px;
-  padding-left:40px;
+  padding-left:1em;
   max-width:100%;
   margin-top:1em;
   padding-bottom:.5em;
-  position:static;
+  padding-right:8px;
 }
 
   .headernav{
+ display:block;
+  width:100%;
   background-color:var(--color-lightbeige);
   padding:10px;
   border-radius:6px;
@@ -103,7 +107,7 @@
 	  	
 	  	<div class="grid">
 
-	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+	  		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 	  			<div class="display-flex flex-column flex-gap">
 	  				<h3>background</h3>
 	  				<div class="display-flex flex-row flex-gap flex-align-center">
@@ -113,7 +117,7 @@
 	  		</div>
 
 
-	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+	  		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 	  			<div class="display-flex flex-column flex-gap">
 	  				<h3>font colors</h3>
 	  				<div class="display-flex flex-row flex-gap flex-align-center">
@@ -126,7 +130,7 @@
 	  		</div>
 
 
-	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+	  		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 	  			<div class="display-flex flex-column flex-gap">
 	  				<h3>primary accent</h3>
 	  				<div class="display-flex flex-row flex-gap flex-align-center">
@@ -137,7 +141,6 @@
 	  		</div>
 
 
-	  		<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 	  			<div class="display-flex flex-column flex-gap">
 	  				<h3>secondary accent</h3>
 	  				<div class="display-flex flex-row flex-gap flex-align-center">
