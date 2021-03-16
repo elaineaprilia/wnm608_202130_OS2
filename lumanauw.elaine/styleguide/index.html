@@ -27,38 +27,42 @@
 	</div>
  -->
 	<style>
+
   .sidenav{
-/*  	height: 100%;*/
-  	width:auto;
-/*  	height:100%;*/
+  	width:9em;
   	position:fixed;
   	top:20px;
   	left:20px;
   	border-radius:10px;
   	background-color:var(--color-lightbeige);
   	overflow-x: hidden;
-  	padding:30px;
-  	}
+  	padding:20px;
+  	font-size:.9em;
+  	line-height:2em;
+}
 
   .main{
-/*  position:static;*/
-  margin-left:6em;
-  font-size:28px;
-  padding-left:1em;
-  max-width:100%;
-  margin-top:1em;
-  padding-bottom:.5em;
-  padding-right:8px;
+  padding:1em;
+  margin:0 auto;
+  margin-bottom:10px;
+  width:100%;
+  border:.5px solid #D3D3D3;
+  border-radius:10px;
 }
 
-  .headernav{
- display:block;
-  width:100%;
-  background-color:var(--color-lightbeige);
-  padding:10px;
-  border-radius:6px;
-  font-size:17px;
+
+  .main-menu{
+  display:inline-block;
+  margin-right:2%;
+  padding-right:3%;
+  margin-left:10em;
+  padding-left:1em;
+  max-width:100%;
+  margin-top:.5em;
+  padding-bottom:.5em;
+
 }
+
 
   .grid{
 	display:grid;
@@ -66,53 +70,133 @@
 	grid-gap:2px .5em;
 }
 
+
   .palette{
   	border:.5px solid black;
-  	border-radius:10px;
   	height: 20px;
     width: 20px;
 }
-	}
 
+ .example-container{
+    height:8rem;
+    margin-right: 4.5rem;
+    background-color:var(--color-lightbeige);
+}
+
+ .example-header{
+    height:2rem;
+    margin-right: 4.5rem;
+    background-color:var(--color-lightbeige);
+    border-radius: .25rem;
+    margin-bottom:5px;
+}
+
+
+ .highlight{
+ 	display:inline-block;
+ 	border:.1px solid grey;
+ 	border-radius:4px;
+ 	margin-bottom:1rem;
+ 	padding:.4em;
+ 	background-color:#f7f7f9;
+ 	margin-left:0px;
+ }
+
+
+.code{
+	font:initial;
+	color:initial;
+}
+
+	}
 	</style>
 
 	<div class="sidenav display-flex flex-column flex-align flex-gap">
-		<a href="styleguide/#typography">typography</a></li>
-		<a href="styleguide/#color">color</a></li>
-		<a href="styleguide/#grid">grid</a></li>
-		<a href="styleguide/#buttons">buttons</a></li>
-		<a href="styleguide/#images">images</a></li>
+		<a href="styleguide/#container">container</a>
+		<a href="styleguide/#typography">typography</a>
+		<a href="styleguide/#lists">lists</a>
+		<a href="styleguide/#color">color</a>
+		<a href="styleguide/#grid">grid</a>
+		<a href="styleguide/#buttons">buttons</a>
+		<a href="styleguide/#images">images</a>
 	</div>
 
-	<div class="main">
+<div class="main-menu">
+
+	<div class="main" style="border:none">
 	  <a href="index.html"><h3>Click to view website</h3></a>
 	</div>
 
 	<div class="main">
 
-	  <h3 class="headernav" id="typography">typography</h3>
-	  	<div class="display-flex flex-row flex-gap flex-align-center">
-	  		<code>&lt;h1&gt;&lt;h1&gt;</code>  <h1>Heading 1</h1></div>
-	  	<div class="display-flex flex-row flex-gap flex-align-center">
-	  		<code>&lt;h2&gt;&lt;h2&gt;</code>  <h2>Heading 2</h2></div>
-	  	<div class="display-flex flex-row flex-gap flex-align-center">
-	  		<code>&lt;h3&gt;&lt;h3&gt;</code>  <h3>Heading 3</h3></div>
-	  	<div class="display-flex flex-row flex-gap flex-align-center">
-	  		<code>&lt;p&gt;&lt;p&gt;</code>  <p>Paragraph</p></div>
+	<h3 id="container">container</h3>
+	<p>This is a basic container applicable accross all webpages for the website.
+	<div  class="example-header">example header</div>
+	<div class="example-container">
+	<code>
+		&lt;div class="container"><br>
+  		&lt;!-- Content here --><br>
+		&lt;/div>
+	</code>
+	</div>
+	</div>
+
+
+	<div class="main">
+		<h3 id="typography">typography</h3>
+		<p>Fonts used are both accessible from Google Fonts. Fonts are <a href="https://fonts.google.com/specimen/Libre+Baskerville">Libre Bakersville</a> and <a href="https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom">Josefins Sans.</a></p>
+	  		<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;h1&gt;&lt;h1&gt;</code>  <h1>h1. Titles</h1></div>
+	  		<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;h2&gt;&lt;h2&gt;</code>  <h2>h2. Blockquotes</h2></div>
+	  		<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;h3&gt;&lt;h3&gt;</code>  <h3>h3. Titles on individual product pages</h3></div>
+	  		<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;h4&gt;&lt;h4&gt;</code>  <h4>h4. Gallery product page title</h4></div>
+	  		<div class="display-flex flex-row flex-gap flex-align-center">
+	  		<code>&lt;p&gt;&lt;p&gt;</code>  <p>p. Body text (paragraph), Buttons</p></div>
+
+	 	<div class="highlight">
+	 			<pre>
+	  			<code>
+&lt;h1&gt;content&lt;h1&gt;
+&lt;h2&gt;content&lt;h2&gt;
+&lt;h3&gt;content&lt;h3&gt;
+&lt;h4&gt;content&lt;h4&gt;
+&lt;p&gt;content&lt;p&gt;
+				</code>
+				</pre>
+		</div>
 	</div>
 
 	<div class="main">
-	  
-	  <h3 class="headernav" id="color">color</h3>
-	  	
-	  	<div class="grid">
+		<h3 id="lists">lists</h3>
+		<p>both ul and ol have been formatted - ul will use circle disk, ol will use numberred list. both have 1.7em line height.
+		<ul>
+			<li>this is an example of an unordered list.</li>
+			<li>this is an example of an unordered list.</li>
+			<li>this is an example of an unordered list.</li>
+			<li>this is an example of an unordered list.</li>
+		</ul>
 
+		<ol>
+			<li>this is an example of an ordered list.</li>
+			<li>this is an example of an ordered list.</li>
+			<li>this is an example of an ordered list.</li>
+			<li>this is an example of an ordered list.</li>
+	</div>
+
+
+	<div class="main">
+	  <h3 id="color">color</h3>
+	  	<div class="grid">
 	  		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 	  			<div class="display-flex flex-column flex-gap">
 	  				<h3>background</h3>
 	  				<div class="display-flex flex-row flex-gap flex-align-center">
 	  					<div class="palette" style="background-color:var(--color-lightgrey)"></div>
-	  					<p>light-grey #e5e3e1</p></div>
+	  					<p>light-grey #e5e3e1</p>
+	  				</div>
 	  			</div>
 	  		</div>
 
@@ -140,28 +224,43 @@
 	  			</div>
 	  		</div>
 
-
+	  		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 	  			<div class="display-flex flex-column flex-gap">
 	  				<h3>secondary accent</h3>
 	  				<div class="display-flex flex-row flex-gap flex-align-center">
 	  					<div class="palette" style="background-color:var(--color-lightbeige)"></div>
 	  					<p>light-beige #ccbeb5</p></div>
 	  			</div>
+	  				<div class="display-flex flex-row flex-gap flex-align-center">
+	  					<div class="palette" style="background-color:var(--color-black)"></div>
+	  					<p>black #111</p></div>
+	  			</div>
 	  		</div>
 
+	  		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	  			<div class="highlight"><pre>
+	  			<code>
+--color-lightgrey:#e5e3e1;
+
+--color-darkgrey:#231f20;
+--color-white:#fff;
+
+--color-maroon:#603534;
+
+--color-lightbeige:#ccbeb5;
+--color-black:#111;
+				</code></pre>
+	  			</div>
+	  		</div>
 		</div>
-	</div>
+
+
 
 	<div class="main">
 
-		<h3 class="headernav" id="grid">grid</h3>
-		
-		<p>Single column, non responsive</p>
-	  	<div class="grid">
-	  		<div class="col-xs-12">
-	  			<p class="well" style="color:var(--color-white)">Column 12</p>
-	  		</div>
-	  	</div>
+		<h3 id="grid">grid</h3>
+		<p>The website will be sectioned using grids with the hope of being responsive.</p>
+
 
 	  	<p>2 column, responsive</p>
 	  	<div class="grid">
@@ -231,27 +330,120 @@
 
 	<div class="main">
 	
-	<h3 class="headernav" id="buttons">buttons</h3>
+	<h3 id="buttons">buttons</h3>
 		
 		<div class="grid grid-gap">
 			<div class="col-xs-12 col-md-12 col-lg-4">
-	  			<p class="button" style="color:var(--color-white)">button</p>
+	  			<p class="button-all-wrap button" style="color:var(--color-white)">button</p>
 	  		</div>
 	  		<div class="col-xs-12 col-md-12 col-lg-4">
-	  			<p class="button2" style="color:var(--color-maroon);">button2</p>
+	  			<p class="button-all-wrap button2" style="color:var(--color-maroon);">button2</p>
 	  		</div>
 	  		<div class="col-xs-12 col-md-12 col-lg-4">
-	  			<p class="button3">button3</p>
+	  			<p class="button-all-wrap button3">button3</p>
 	  		</div>
 		</div>
 	</div>
 
 	<div class="main">
 
-	<h3 class="headernav" id="images">images</h3>
-	
-	
+	<h3 id="images">images</h3>
+	<p>image banners: sits most top of the gallery page</p>
+
+	<div class="grid">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="display-flex flex-column flex-gap">
+				<div class="responsive banner-img-format" style="background-image:url('https://via.placeholder.com/1000x300')">
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<p>product in gallery 300px x 300px (grid)</p>
+
+	<div class="grid">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="responsive product-img-format img-hover-zoom">
+				<img src="https://via.placeholder.com/300x300">
+			</div>
+			<div class="gallery-content">
+				<h4>Product name 1</h4>
+				<p>Lorem Ipsum Dolor Sit Amet</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="responsive product-img-format img-hover-zoom">
+				<img src="https://via.placeholder.com/300x300">
+			</div>
+			<div class="gallery-content">
+				<h4>Product name 2</h4>
+				<p>Lorem Ipsum Dolor Sit Amet</p>
+			</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="responsive product-img-format img-hover-zoom">
+				<img src="https://via.placeholder.com/300x300">
+			</div>
+			<div class="gallery-content">
+				<h4>Product name 3</h4>
+				<p>Lorem Ipsum Dolor Sit Amet</p>
+			</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="responsive product-img-format img-hover-zoom">
+				<img src="https://via.placeholder.com/300x300">
+			</div>
+			<div class="gallery-content">
+				<h4>Product name 4</h4>
+				<p>Lorem Ipsum Dolor Sit Amet</p>
+			</div>
+		</div>
+	</div>
+	 	
+	 	<div class="highlight">
+	 			<pre><code>
+*image content*
+
+&lt;div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+	&lt;div class="responsive product-img-format img-hover-zoom">  
+		&lt;img src="(Image Link)">
+	&lt;/div>
+
+*text content*
+
+	&lt;div class="gallery-content">
+		&lt;h4>(Product Name)&lt;h4>
+		&lt;p>(Product Details)&lt;/p>
+	&lt;div>
+				</code></pre>
+		</div>
+	</div>
+
+	<div class="main">
+	
+	<h3 id="table">tables</h3>
+	<p>table, standard</p>
+	
+	<table id="checkout">
+	<tr>
+		<th>Heading1</th>
+		<th>Heading2</th>
+		<th>Heading3</th>
+	</tr>
+	<tr>
+		<td>AAAA</td>
+		<td>BBBB</td>
+		<td>CCCC</td>
+	</tr>
+	<tr>
+		<td>DDDD</td>
+		<td>EEEE</td>
+		<td>FFFF</td>
+	</tr>
+</table>
+
 
 
 

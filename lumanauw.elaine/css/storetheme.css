@@ -1,16 +1,4 @@
-/*:root {
 
-   --color-deepgrey:#231f20;
-   --color-maroon:#602534;
-   --color-lightbeige:#ccbeb5;
-   --color-pastelpink:#d4a9a5;
-   --color-lightgrey:#e5e3e1;
-   --color-bluegrey:#9ba4a3;
-
-   --color-white:#fff;1;
-   --color-black:#11
-}
-*/
 
 body {
    background-color:var(--color-lightgrey);
